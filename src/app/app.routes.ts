@@ -10,16 +10,17 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 import { RegisterComponent } from 'src/app/login/register.component';
 
 const appRoutes: Routes = [
-    {
-        path: '',
-        component: PagesComponent,
-        children: [
-            {path: 'dashboard', component: DashboardComponent},
-            {path: 'progress', component: ProgressComponent},
-            {path: 'graficas1', component: Graficas1Component},
-            {path: '', redirectTo: '/dashboard', pathMatch: 'full'}, /*cualquier ruta vacia redirecciona a dashboard */
-        ]
-    },
+    // {
+    //     path: '',
+    //     component: PagesComponent,
+    //     children: [
+    //         {path: 'dashboard', component: DashboardComponent},
+    //         {path: 'progress', component: ProgressComponent},
+    //         {path: 'graficas1', component: Graficas1Component},
+    //         {path: '', redirectTo: '/dashboard', pathMatch: 'full'}, /*cualquier ruta vacia redirecciona a dashboard */
+    //     ]
+    // },
+    
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: '**', component: NopagefoundComponent} /* cualquier otra ruta que no este definida */

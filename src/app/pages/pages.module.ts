@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { PAGES_ROUTES } from "src/app/pages/pages.routes";
 import { SharedModule } from "src/app/shared/shared.module";
 
 import { DashboardComponent } from "src/app/pages/dashboard/dashboard.component";
@@ -21,7 +22,8 @@ import { PagesComponent } from "src/app/pages/pages.component";
         Graficas1Component
     ],
     imports: [
-        SharedModule
+        SharedModule,
+        PAGES_ROUTES
     ]
 })
 
