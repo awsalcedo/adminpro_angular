@@ -1,3 +1,6 @@
+// Rutas
+import { APP_ROUTES } from './app.routes';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,7 +27,8 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
     BreadcrumbsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
