@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Graficas1Component } from './pages/graficas1/graficas1.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+import { RegisterComponent } from 'src/app/login/register.component';
 
 const appRoutes: Routes = [
     {
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
         ]
     },
     {path: 'login', component: LoginComponent},
-    {path: 'register', component: LoginComponent},
+    {path: 'register', component: RegisterComponent},
     {path: '**', component: NopagefoundComponent} /* cualquier otra ruta que no este definida */
 ];
 
